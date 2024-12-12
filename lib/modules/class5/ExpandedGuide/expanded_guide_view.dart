@@ -1,4 +1,6 @@
 // Expanded Widget
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ExpandedGuide extends StatelessWidget {
@@ -7,14 +9,16 @@ class ExpandedGuide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Expanded Guide"),),
       body: Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceBetween ,
         children: [
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Container(
-              color: Colors.red,
+              color: Colors.teal,
               height: 100,
-              child: Center(child: Text('Expanded 2x')),
+              child: Center(child: Text('Expanded 3x')),
             ),
           ),
           Expanded(

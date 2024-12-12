@@ -7,6 +7,7 @@ class GridViewCountGuide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Grid View Count Guide"),),
       body: GridView.count(
         crossAxisCount: 4,
         crossAxisSpacing: 10,

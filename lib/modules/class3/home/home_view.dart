@@ -8,6 +8,12 @@ import 'package:sign_in_app/modules/class4/containerDetailsguide/container_detai
 import 'package:sign_in_app/modules/class4/imgGuide/img_guide_view.dart';
 import 'package:sign_in_app/modules/class4/listGuide/list_view.dart';
 import 'package:sign_in_app/modules/class4/listTilewidget/list_tile_widget.dart';
+import 'package:sign_in_app/modules/class5/ButtonsGuide/buttons_guide_view.dart';
+import 'package:sign_in_app/modules/class5/ExpandedGuide/expanded_guide_view.dart';
+import 'package:sign_in_app/modules/class5/FittedBoxGuide/fittedbox_guide_view.dart';
+import 'package:sign_in_app/modules/class5/GridViewCountGuide/gridview_count_guide_view.dart';
+import 'package:sign_in_app/modules/class5/GridViewGuide/gridview_guide_view.dart';
+import 'package:sign_in_app/modules/class5/ListViewBuilderGuide/listview_builder_guide_view.dart';
 
 
 
@@ -20,9 +26,15 @@ class HomeScreen extends StatelessWidget {
      {'title': 'Container decorative Example', 'page': ContainerDetailsGuide()},
      {'title': 'Card Example', 'page': CardGuide()},
      {'title': 'ListView Example', 'page': ListViewGuide()},
-      {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
-       {'title': 'Images Example', 'page': ImageGuide()},
-        {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
+     {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
+     {'title': 'Images Example', 'page': ImageGuide()},
+     {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
+     {'title': 'List view builder guide', 'page': ListViewBuilderGuide()},
+     {'title': 'Grid View Guide ', 'page':GridViewGuide()},
+     {'title': 'Grid View  Count Guide ', 'page':GridViewCountGuide()},
+     {'title': 'Fitted Box', 'page':FittedBoxGuide()},
+      {'title': 'Expanded Guide', 'page':ExpandedGuide()},
+       {'title': 'Buttons Guide', 'page':ButtonsGuide()},
     // {'title': 'Column Example', 'page': ColumnExample()},
     // {'title': 'Text Example', 'page': TextExample()},
     // {'title': 'SizedBox Example', 'page': SizedBoxExample()},

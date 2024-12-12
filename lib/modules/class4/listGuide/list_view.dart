@@ -27,7 +27,7 @@ class ListViewGuide extends StatelessWidget {
           ),
         ),
       ),
-          trailing: IconButton(icon: Icon(Icons.delete), onPressed: () {  },), 
+          trailing: Icon(Icons.delete), 
           title: Text('Item ${index + 1}'),
           subtitle: Text('Subtitle ${index + 1}'),
         );
