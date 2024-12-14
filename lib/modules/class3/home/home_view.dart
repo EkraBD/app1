@@ -6,6 +6,7 @@ import 'package:sign_in_app/modules/class4/CircleAvatar/circle_avatar_view.dart'
 import 'package:sign_in_app/modules/class4/containerDetailsguide/cardGuide/card_guide_view.dart';
 import 'package:sign_in_app/modules/class4/containerDetailsguide/container_details_guide_view.dart';
 import 'package:sign_in_app/modules/class4/imgGuide/img_guide_view.dart';
+import 'package:sign_in_app/modules/class4/listGuide/list_task.dart';
 import 'package:sign_in_app/modules/class4/listGuide/list_view.dart';
 import 'package:sign_in_app/modules/class4/listTilewidget/list_tile_widget.dart';
 import 'package:sign_in_app/modules/class5/ButtonsGuide/buttons_guide_view.dart';
@@ -26,14 +27,15 @@ class HomeScreen extends StatelessWidget {
      {'title': 'Container decorative Example', 'page': ContainerDetailsGuide()},
      {'title': 'Card Example', 'page': CardGuide()},
      {'title': 'ListView Example', 'page': ListViewGuide()},
-     {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
-     {'title': 'Images Example', 'page': ImageGuide()},
-     {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
-     {'title': 'List view builder guide', 'page': ListViewBuilderGuide()},
-     {'title': 'Grid View Guide ', 'page':GridViewGuide()},
-     {'title': 'Grid View  Count Guide ', 'page':GridViewCountGuide()},
-     {'title': 'Fitted Box', 'page':FittedBoxGuide()},
-      {'title': 'Expanded Guide', 'page':ExpandedGuide()},
+      {'title': 'List_Task Example', 'page': list_task()},
+    //  {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
+    //  {'title': 'Images Example', 'page': ImageGuide()},
+    //  {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
+    //  {'title': 'List view builder guide', 'page': ListViewBuilderGuide()},
+    //  {'title': 'Grid View Guide ', 'page':GridViewGuide()},
+    //  {'title': 'Grid View  Count Guide ', 'page':GridViewCountGuide()},
+    //  {'title': 'Fitted Box', 'page':FittedBoxGuide()},
+    //   {'title': 'Expanded Guide', 'page':ExpandedGuide()},
        {'title': 'Buttons Guide', 'page':ButtonsGuide()},
     // {'title': 'Column Example', 'page': ColumnExample()},
     // {'title': 'Text Example', 'page': TextExample()},
