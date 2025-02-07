@@ -7,7 +7,7 @@ class GridViewGuide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Grid View Guide"),),
+      appBar: AppBar(title: Text("OHOO!! Panda Panda.."),),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
@@ -16,14 +16,14 @@ class GridViewGuide extends StatelessWidget {
         ),
         itemCount: 12,
         itemBuilder: (context, index) {
-          // return Container(
-          //   color: Colors.red,
-          //   child: Center(
-          //     child: Text('Grid Item ${index + 1}',
-          //         style: TextStyle(color: Colors.white)),
-          //   ),
-          // );
-          // return Image(image: image)
+          return Container(
+          margin: EdgeInsets.all(10),  
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),),
+            child: Center(
+             child:   Image(image: AssetImage('assets/images/panda.png')),
+            ),
+          );
+        
         },
       ),
     );
