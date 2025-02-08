@@ -27,7 +27,8 @@ class NavBarGuide extends StatelessWidget {
                 )
                 ),
           ],
-        )),
+        ),
+        ),
     );
   }
 }

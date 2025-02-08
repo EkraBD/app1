@@ -21,6 +21,8 @@ import 'package:sign_in_app/modules/class6/BottomNavBar/BottomNavBar.dart';
 import 'package:sign_in_app/modules/class6/NavBarGuide/NavBarGuide.dart';
 import 'package:sign_in_app/modules/class6/floatingActionButton/floatingActionButton.dart';
 import 'package:sign_in_app/modules/class6/tabBarView/tabBarviewGuide.dart';
+import 'package:sign_in_app/modules/class8to12/RoutingGuide/FirstScreen.dart';
+import 'package:sign_in_app/modules/class8to12/RoutingGuide/custom_drawer_guide.dart';
 
 
 
@@ -49,8 +51,8 @@ class HomeScreen extends StatelessWidget {
          {'title': 'Nav Bar  Guide', 'page':NavBarGuide()},
           {'title': 'Bottom Nav Bar  Guide', 'page':BottomNavBar()},
            {'title': 'Floating Action Button  Guide', 'page':floatingAction()},
-    // {'title': 'Column Example', 'page': ColumnExample()},
-    // {'title': 'Text Example', 'page': TextExample()},
+     {'title': 'First Screen Example', 'page':  FirstScreen()},
+     {'title': 'Custom Drawer', 'page': CustomDrawer()},
     // {'title': 'SizedBox Example', 'page': SizedBoxExample()},
     // {'title': 'Center Example', 'page': CenterExample()},
   ];
@@ -58,20 +60,55 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Flutter Widgets List'.toUpperCase())),
+      appBar: AppBar(title: Text('Flutter Widgets List'.toUpperCase(),
+      textAlign: TextAlign.center,
+      ),
+      ),
       body: ListView.builder(
         itemCount: pages.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(pages[index]['title']),
-            onTap: () {
+           return Padding(
+            padding: EdgeInsets.all(5),
+            child:Card(
+              elevation: 10,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10),),
+              child: InkWell(
+              hoverColor: Colors.lime,
+              onTap: () {
               // Navigate to the selected page
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => pages[index]['page']),
               );
             },
+            borderRadius: BorderRadius.circular(12),
+            child: Container(
+              padding: EdgeInsets.all(12),
+              child: Text(pages[index]['title'],
+              textAlign: TextAlign.center,
+              style: TextStyle(fontFamily: 'Poppins',fontSize: 16, fontWeight: FontWeight.w400),
+              ),
+            ),
+            ),
+              
+            ),
+            
           );
+
+
+
+
+
+          // return ListTile(
+          //   title: Text(pages[index]['title']),
+          //   onTap: () {
+          //     // Navigate to the selected page
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (context) => pages[index]['page']),
+          //     );
+          //   },
+          // );
         },
       ),
     );

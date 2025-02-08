@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sign_in_app/modules/class3/home/home_view.dart';
+import 'package:sign_in_app/modules/class8to12/RoutingGuide/FirstScreen.dart';
+import 'package:sign_in_app/modules/class8to12/RoutingGuide/SecondScreen.dart';
 
 
 void main() {
@@ -14,6 +16,10 @@ class MyApp extends StatelessWidget {
       title: 'ListView Navigation',
       theme: ThemeData(primarySwatch: Colors.blue),
       home: HomeScreen(),
+      routes: {
+        '/second': (context) => SecondScreen(),
+        '/third': (context) => HomeScreen()
+        },
     );
   }
 }

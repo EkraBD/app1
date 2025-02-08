@@ -13,9 +13,37 @@ class TabBarViewGuide extends StatelessWidget {
         SizedBox(
           width: 20,
         ),
-        Icon(Icons.search),
 
       ],   
+      ),
+
+      body: DefaultTabController(
+        length: 3, 
+        child: Column(
+          children: [
+            TabBar(tabs:[
+              Tab(icon: Icon(Icons.home), text: 'Home Page'),
+              Tab(icon: Icon(Icons.safety_check), text: 'Safety check'),
+              Tab(icon: Icon(Icons.settings), text: 'Home Page')
+            ],            
+            ),
+            Expanded(
+              child: TabBarView(
+                children:[
+                   Center(child: Text("Home Page")),
+                    Center(child: Text("Search Here")),
+                     Center(child: Text("Home Page")),
+                ],
+                )
+                ),
+          ],
+        ),
+        ),
+
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        print("Clicked");
+      },
+      child: Icon(Icons.home),
       ),
       
     );
