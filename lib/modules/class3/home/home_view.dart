@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_in_app/modules/class13/dartBasic.dart';
 import 'package:sign_in_app/modules/class3/containerGuide/containerguide_view.dart';
 import 'package:sign_in_app/modules/class3/rowGuide/rowguide_view.dart';
 import 'package:sign_in_app/modules/class3/scafoldGuide/scafoldguide_view.dart';
@@ -21,6 +22,7 @@ import 'package:sign_in_app/modules/class6/BottomNavBar/BottomNavBar.dart';
 import 'package:sign_in_app/modules/class6/NavBarGuide/NavBarGuide.dart';
 import 'package:sign_in_app/modules/class6/floatingActionButton/floatingActionButton.dart';
 import 'package:sign_in_app/modules/class6/tabBarView/tabBarviewGuide.dart';
+import 'package:sign_in_app/modules/class8to12/RoutingGuide/ArrayExp.dart';
 import 'package:sign_in_app/modules/class8to12/RoutingGuide/FirstScreen.dart';
 import 'package:sign_in_app/modules/class8to12/RoutingGuide/custom_drawer_guide.dart';
 
@@ -32,29 +34,29 @@ class HomeScreen extends StatelessWidget {
     {'title': 'Scaffold Example', 'page': ScaffoldExample()},
     {'title': 'Container Example', 'page': ContainerExample()},
     {'title': 'Row Example', 'page': RowExample()},
-     {'title': 'Container decorative Example', 'page': ContainerDetailsGuide()},
-     {'title': 'Card Example', 'page': CardGuide()},
-      {'title': 'Card Task', 'page':  CardTask()},
-     {'title': 'ListView Example', 'page': ListViewGuide()},
-      {'title': 'List_Task Example', 'page': list_task()},
-       {'title': 'Buttons_task', 'page': ButtonTask()},
-      {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
-      {'title': 'Images Example', 'page': ImageGuide()},
-      {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
+    {'title': 'Container decorative Example', 'page': ContainerDetailsGuide()},
+    {'title': 'Card Example', 'page': CardGuide()},
+    {'title': 'Card Task', 'page':  CardTask()},
+    {'title': 'ListView Example', 'page': ListViewGuide()},
+    {'title': 'List_Task Example', 'page': list_task()},
+    {'title': 'Buttons_task', 'page': ButtonTask()},
+    {'title': 'List Tile Widget Example', 'page': ListTileGuide()},
+    {'title': 'Images Example', 'page': ImageGuide()},
+    {'title': 'CircleAvatar Example', 'page': CircleAvatarGuide()},
     //  {'title': 'List view builder guide', 'page': ListViewBuilderGuide()},
-      {'title': 'Grid View Guide ', 'page':GridViewGuide()},
-      {'title': 'Grid View  Count Guide ', 'page':GridViewCountGuide()},
+    {'title': 'Grid View Guide ', 'page':GridViewGuide()},
+    {'title': 'Grid View  Count Guide ', 'page':GridViewCountGuide()},
     //  {'title': 'Fitted Box', 'page':FittedBoxGuide()},
     //   {'title': 'Expanded Guide', 'page':ExpandedGuide()},
-       {'title': 'Buttons Guide', 'page':ButtonsGuide()},
-        {'title': 'Tab BarView Guide Guide', 'page':TabBarViewGuide()},
-         {'title': 'Nav Bar  Guide', 'page':NavBarGuide()},
+    //     {'title': 'Buttons Guide', 'page':ButtonsGuide()},
+    {'title': 'Tab BarView Guide Guide', 'page':TabBarViewGuide()},
+    {'title': 'Nav Bar  Guide', 'page':NavBarGuide()},
           {'title': 'Bottom Nav Bar  Guide', 'page':BottomNavBar()},
            {'title': 'Floating Action Button  Guide', 'page':floatingAction()},
      {'title': 'First Screen Example', 'page':  FirstScreen()},
      {'title': 'Custom Drawer', 'page': CustomDrawer()},
-    // {'title': 'SizedBox Example', 'page': SizedBoxExample()},
-    // {'title': 'Center Example', 'page': CenterExample()},
+     {'title': 'Array Example', 'page': arrayexample()},
+     {'title': 'Dart Basics page', 'page': dartBasic()},
   ];
 
   @override
