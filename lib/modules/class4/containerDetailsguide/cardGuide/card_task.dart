@@ -34,17 +34,6 @@ class CardTask extends StatelessWidget {
               ],
             ),
           ),
-
-        // child: CircleAvatar(          
-        // radius: 60,
-        // backgroundColor: Colors.blueAccent,
-        // backgroundImage: AssetImage("assets/images/pic.jpeg"),
-        // child:Text(
-        //   'Profile Name',
-        //    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        //  ),
-        //   ),
-           
         ),
       ),
     );

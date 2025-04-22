@@ -25,6 +25,8 @@ import 'package:sign_in_app/modules/class6/tabBarView/tabBarviewGuide.dart';
 import 'package:sign_in_app/modules/class8to12/RoutingGuide/ArrayExp.dart';
 import 'package:sign_in_app/modules/class8to12/RoutingGuide/FirstScreen.dart';
 import 'package:sign_in_app/modules/class8to12/RoutingGuide/custom_drawer_guide.dart';
+import 'package:sign_in_app/modules/pro_details/cart.dart';
+import 'package:sign_in_app/modules/pro_details/pay.dart';
 
 
 
@@ -51,12 +53,12 @@ class HomeScreen extends StatelessWidget {
     //     {'title': 'Buttons Guide', 'page':ButtonsGuide()},
     {'title': 'Tab BarView Guide Guide', 'page':TabBarViewGuide()},
     {'title': 'Nav Bar  Guide', 'page':NavBarGuide()},
-          {'title': 'Bottom Nav Bar  Guide', 'page':BottomNavBar()},
-           {'title': 'Floating Action Button  Guide', 'page':floatingAction()},
+    {'title': 'Bottom Nav Bar  Guide', 'page':BottomNavBar()},
+    {'title': 'Floating Action Button  Guide', 'page':floatingAction()},
      {'title': 'First Screen Example', 'page':  FirstScreen()},
      {'title': 'Custom Drawer', 'page': CustomDrawer()},
-     {'title': 'Array Example', 'page': arrayexample()},
-     {'title': 'Dart Basics page', 'page': dartBasic()},
+     {'title': 'Second UI page', 'page': pay()},
+     {'title': 'First UI page', 'page': cart()},
   ];
 
   @override
